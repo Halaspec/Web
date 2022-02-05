@@ -20,13 +20,6 @@
     transform: translateX(-15%);
 }
 
-.profile_img img:hover{animation:  smooth 0.7s forwards;}
-
-@keyframes smooth {
-    to{background-color: white;}
-    
-}
-
 .profile_img img{
     width: 100%;
     height: 100%;
@@ -37,13 +30,20 @@
     border: 2px white solid;
 }
 
-.title{
+.profile_img img:hover{animation:  smooth 0.7s forwards;}
+
+@keyframes smooth {
+    to{background-color: white;}
+    
+}
+
+.profile .title{
     padding-top: 10%;
     transform: translateX(-10%);
 
 }
 
-.title span {
+.profile .title span {
     font-size: 20px;
     font-weight: 500;
     cursor: default;
@@ -54,7 +54,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    background: rgb(186, 43, 43);
+    background: rgb(186, 43, 43, 0.9);
     width: 80px;
     height: 40px;
     border-radius: 10%;
@@ -64,22 +64,103 @@
 
 .profile .button:hover{ 
     animation: scaler 0.5s forwards;
+    background: rgb(186, 43, 43);
 }
 
 @keyframes scaler {
     from{   
          transform: translateX(25%);}
     to { 
-        transform: scale(110%) translateX(20%);}
+        transform: scale(105%) translateX(20%);}
 }
 
-button{
+.profile button{
     transform: translateX(7%);
     text-decoration: none;
     border: none;
     font-size: 12px;
     color: white;
-    background-color:rgb(186, 43, 43);
+    background-color:rgb(186, 43, 43, 0);
     cursor: pointer;
+    padding: 5px;
+}
+
+section .pop  {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 18, 18, 0.5);
+    position: absolute;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events:none; 
+}
+
+.pop img {
+    width: 60px;
+    height:60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.container_box {
+    position: absolute;
+    background-color: aliceblue;
+    padding : 30px;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 12px;
+}
+
+.pop .box .popProfilText {
+    position: relative;
+    left: -25%;
+    top: -20px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.box textarea{
+   resize: none;
+   width: 100%;
+   margin-top: 6px;
+   min-height: 140px;
+   background-color: f3f3f3;
+   border-radius: 6px;
+   border: 1px solid #ddd;
+   outline: none;
+   font-size: 14px;
+   transition: all 2s ease;
+   padding: 10px;
+}
+
+.box .btn {
+    background:  rgb(98, 156, 206, 0.8);
+    color: white;
+    border: none; 
+    cursor: pointer;
+    padding: 12px 6px; 
+    margin-top: 5px;
+    border-radius: 6px;
+
+}
+
+.box .btn:hover {
+    background-color:   rgb(98, 156, 206);
+}
+
+section.show .pop{
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    pointer-events:auto;
+}
+
+section.show .profile{
+    display: none;
 }
 

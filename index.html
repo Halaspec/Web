@@ -9,6 +9,7 @@
 
     <body>
         <div class="Page_1">
+            <section>
              <div class="profile">
                  <div class="profile_img">
                      <img src="src/hmz.jpg" alt="" class="pic">
@@ -19,9 +20,30 @@
                  </div>
                  <div class="button">
                     <ion-icon name="send-outline" style="color: aliceblue;"></ion-icon>
-                    <button class="msg">   Send me </button>
+                    <button class="msg" id="click">   Send me </button>
                  </div> 
-            </div>
-        </div>
+             </div>
+            <div class="pop">
+                <div class="container_box" style="overflow: hidden;">
+                    <ion-icon id="close" name="close-circle" class="ion" style=" position: relative ;  left: 95%; cursor: pointer; color: rgb(218, 83, 83, 0.8); transform: scale(110%);"></ion-icon>
+                    <div class="box">
+                        <div class="popProfilText">
+                            <img src="src/hmz.jpg" alt="" class="pic">
+                            <div class="title">
+                                <span class="alias" style=" cursor:default;" >Hamza SALAH </br></span>
+                                <span class="job"   style="font-size: 14px; cursor:default ;">Web Developper</span>
+                             </div>
+                        </div>
+                        <form action="/formChek.php" method="POST" style="width: 100%; display: flex; justify-content: flex-end; flex-wrap: wrap;"> 
+                             <textarea placeholder="Entez votre méssage"></textarea>
+                             <input type="submit" class="btn" ></button>
+                        </form>
+                    </div>
+                </div> 
+              </div>
+            </section>
+          </div>
+
+        <script src="script.js"></script>
     </body>
 </html>
