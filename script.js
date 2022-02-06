@@ -11,3 +11,9 @@ const section = document.querySelector("section"),
             section.classList.remove("show")
             }
           )
+
+    function keyPress (e) {
+      if(e.key === "Escape") {
+         section.classList.remove("show");
+        }
+    }

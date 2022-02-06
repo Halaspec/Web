@@ -163,3 +163,12 @@ section.show .profile{
     display: none;
 }
 
+section.show .nav {
+    opacity: 0;
+    pointer-events: none;
+}
+
+a { text-decoration: none; color: white;}
+.Page_1 .nav a:hover{
+    opacity: 0.5;
+}
