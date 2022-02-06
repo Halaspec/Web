@@ -124,18 +124,16 @@ section .pop  {
     align-items: center;
 }
 
-.box textarea{
+.box .textarea{
    resize: none;
    width: 100%;
-   margin-top: 6px;
-   min-height: 140px;
+   min-height: 100px;
    background-color: f3f3f3;
    border-radius: 6px;
    border: 1px solid #ddd;
    outline: none;
    font-size: 14px;
-   transition: all 2s ease;
-   padding: 10px;
+   padding-left: 50px;
 }
 
 .box .btn {
