@@ -1,6 +1,7 @@
 const section = document.querySelector("section"),
     hireBtn  = section.querySelector("#click"),
-    closeBtn = section.querySelector("#close");
+    closeBtn = section.querySelector("#close"),
+    sendBtn  = section.querySelector("#envoie");
 
     hireBtn.addEventListener("click", ()=>{
           section.classList.add("show");
@@ -12,8 +13,7 @@ const section = document.querySelector("section"),
             }
           )
 
-    function keyPress (e) {
-      if(e.key === "Escape") {
-         section.classList.remove("show");
-        }
-    }
+   sendBtn.addEventListener("click", ()=>{
+            section.classList.add("succes")
+            }
+          )

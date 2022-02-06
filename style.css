@@ -63,16 +63,8 @@
 }
 
 .profile .button:hover{ 
-    animation: scaler 0.5s forwards;
-    background: rgb(186, 43, 43);
-}
+    padding: 1px;}
 
-@keyframes scaler {
-    from{   
-         transform: translateX(25%);}
-    to { 
-        transform: scale(105%) translateX(20%);}
-}
 
 .profile button{
     transform: translateX(7%);
@@ -104,6 +96,26 @@ section .pop  {
     object-fit: cover;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.pop::after {
+    bottom: 50px;
+    background-color: rgb(141, 209, 143);
+    content: "Méssage recu avec succés";
+    position: absolute;
+    color: rgb(245, 255, 188);
+    padding: 6px;
+    border-radius: 6px;
+    opacity: 0;
+}
+
+section.succes .pop::after{
+    animation: succes 0.5s forwards;
+}
+@keyframes succes {
+    from{}
+    to {opacity: 1;}
+    
 }
 
 .container_box {
@@ -169,6 +181,13 @@ section.show .nav {
 }
 
 a { text-decoration: none; color: white;}
+
 .Page_1 .nav a:hover{
     opacity: 0.5;
+    animation: up 0.4s forwards;
+}
+
+@keyframes up {
+    from {}
+    to{transform: translateY(-10%);}
 }
