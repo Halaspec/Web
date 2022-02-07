@@ -101,7 +101,7 @@ section .pop  {
 .pop::after {
     bottom: 50px;
     background-color: rgb(141, 209, 143);
-    content: "Méssage recu avec succés";
+    content: "Message recu avec succés";
     position: absolute;
     color: rgb(245, 255, 188);
     padding: 6px;
