@@ -133,7 +133,7 @@ section .pop  {
 }
 
 section.succes .pop::after{
-    animation: succes 0.5s forwards;
+    animation: succes 1s ;
 }
 @keyframes succes {
     from{}
