@@ -242,10 +242,9 @@ section.show .profile{
 
 a { text-decoration: none; color: white;}
 
-.Page_1 .nav a:hover{
+.Page_1 .footer a:hover{
     opacity: 0.5;
     animation: up 0.4s forwards;
-    height: 100px;
 }
 
 @keyframes up {
