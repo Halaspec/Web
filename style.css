@@ -3,6 +3,12 @@
     padding: 0px;
 }
 
+body{
+    background-color: rgb(98, 156, 206);
+    animation: start 4s forwards;
+    opacity: 0;
+}
+
 .Page_1 .pageColor {
     position: absolute;
     right: 0px;
@@ -18,17 +24,31 @@
 }
 
 .Page_1 .pageColor:hover{
-    height: auto;
+    animation: 1s optionColor forwards;
+}
+
+@keyframes optionColor {
+    from{ height: 20px;}
+    to{
+        height:200px;
+    }
+    
 }
 
 .Page_1 .pageColor ion-icon:hover{
     opacity: 0.5;
 }
+
 .Page_1 .pageColor button{
     margin-bottom: 15px;
     border-radius: 100%;
     height: 20px;
     border: black 1px solid;
+}
+
+.Page_1 .pageColor button:hover{
+    transform: scale(120%);
+    border: white 1px solid;
 }
 
 .Page_1 {
@@ -46,14 +66,9 @@
     align-items: center;
     justify-content: center;
 }
-
-.profile::before{
-    content: "Page de contact";
-    font-size: 25px;
-    color: white;
-    position: absolute;
-    top: 15%;
-    border-bottom: 1px white solid; padding-bottom: 1%;
+@keyframes start {
+    form{opacity: 0;}
+    to{opacity: 1;}
 }
 
 .profile_img{
@@ -67,7 +82,6 @@
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    background-color: rgb(98, 156, 206);
     padding: 4px;
     border: 2px white solid;
 }
@@ -86,7 +100,6 @@ img:hover{
 .profile .title{
     padding-top: 10%;
     width: 100%;
-    transform: translateX(10%);
 }
 
 .profile .title span {
@@ -239,7 +252,6 @@ section.show .profile{
     display: none;
 }
 
-
 a { text-decoration: none; color: white;}
 
 .Page_1 .footer a:hover{
@@ -253,17 +265,52 @@ a { text-decoration: none; color: white;}
 }
 
 section.vert .Page_1{
-    background-color: rgb(155, 25, 53);
+    animation: swaptoRed 1s forwards;
+}
+
+@keyframes swaptoRed {
+    from{}
+    to{
+        background-color: rgb(155, 25, 53);
+
+    }
+    
 }
 
 section.black .Page_1{
-    background-color: rgb(181,161,6);
+    animation: swaptoYellow 1s forwards;
+}
+
+@keyframes swaptoYellow {
+    from{}
+    to{
+        background-color: rgb(181,161,6);
+
+    }
+    
 }
 
 section.blue .Page_1{
-    background-color:  rgb(98, 101, 167);
+    animation: swaptoPurple 1s forwards;
 }
 
+@keyframes swaptoPurple {
+    from{}
+    to{
+        background-color:  rgb(98, 101, 167);
+
+    }
+    
+}
 section.red .Page_1{
-    background-color:  rgb(98, 156, 206); 
+    animation: swaptoBlue 1s forwards;
+}
+
+@keyframes swaptoBlue {
+    from{}
+    to{
+        background-color:  rgb(98, 156, 206); 
+
+    }
+    
 }
