@@ -1,68 +1,106 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <title>Page de contact</title>
-        <meta charset="UTF-8">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=0" >
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    </header>
-    <section>
+<header>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- for Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon/favicon-16x16.png">
+    <link rel="manifest" href="src/favicon/site.webmanifest">
+    <link rel="mask-icon" href="src/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- for Favicon -->
+</header>
+<section>
+
     <body style="overflow: hidden;">
-        <div class="Page_1" style="overflow: hidden;" >
-    
-        
+        <div class="Page_1" style="overflow: hidden;">
             <nav class="pageColor" id="showNavColor">
-                <ion-icon id="tools" name="menu-outline" style="color: white; transform: scale(200%); margin-bottom: 10px; cursor: pointer;"></ion-icon>
-                <button class="bleu" id="bleu" style="background-color: rgb(98, 101, 167);cursor: pointer;"><ion-icon name="ellipse-outline" style="opacity: 0; "></ion-icon></button>  
-                <button class="noir" id="noir" style="background-color: rgb(181,161,6); cursor: pointer;"><ion-icon name="ellipse-outline"style="opacity: 0;"></ion-icon></button>
-                <button class="vert" id="vert" style="background-color:rgb(155, 25, 53); cursor: pointer;"><ion-icon name="ellipse-outline"style="opacity: 0;"></ion-icon></button> 
-                <button class="vert" id="red" style="background-color:rgb(98, 156, 206); cursor: pointer;"><ion-icon name="ellipse-outline"style="opacity: 0;"></ion-icon></button> 
+                <ion-icon id="tools" name="menu-outline"
+                    style="color: white; transform: scale(200%); margin-bottom: 10px; cursor: pointer;"></ion-icon>
+                <button class="bleu" id="bleu" style="background-color: rgb(98, 101, 167);cursor: pointer;">
+                    <ion-icon name="ellipse-outline" style="opacity: 0; "></ion-icon>
+                </button>
+                <button class="noir" id="noir" style="background-color: rgb(181,161,6); cursor: pointer;">
+                    <ion-icon name="ellipse-outline" style="opacity: 0;"></ion-icon>
+                </button>
+                <button class="vert" id="vert" style="background-color:rgb(155, 25, 53); cursor: pointer;">
+                    <ion-icon name="ellipse-outline" style="opacity: 0;"></ion-icon>
+                </button>
+                <button class="vert" id="red" style="background-color:rgb(98, 156, 206); cursor: pointer;">
+                    <ion-icon name="ellipse-outline" style="opacity: 0;"></ion-icon>
+                </button>
             </nav>
-             <div class="profile">
-                <ion-icon name="school-outline" style="display: block; transform: scale(300%);color: white; margin-left: 50%; margin-bottom: 20px; opacity: 0;"></ion-icon>
-                 <div class="profile_img">
-                     <img src="src/hmz.jpg" alt="" class="pic">
-                 </div>
-                 <div class="title">
-                    <span class="alias" >Hamza SALAH </br></span>
+            <div class="profile">
+                <div class="pancarte"
+                    style="height: 150px; width: 200px; position: absolute; top:25%; transform:  translateY(25%); ">
+                    <img src="src/pancarte.png" alt="" class="pic2"
+                        style=" width: 100%;height: 100%;object-fit: cover; ">
+                </div>
+                <div class="profile_img">
+                    <img src="src/hmz.jpg" alt="" class="pic">
+                </div>
+                <div class="title">
+                    <span class="alias">Hamza SALAH </br></span>
                     <span class="job" style="color:aliceblue; font-size:14px; padding-left: 15px;">Web Developper</span>
-                 </div>
-                 <div class="button">
-                    <button class="msg" id="click" style="display: block; width: 100%; height: 100%; padding: 0;"><ion-icon name="arrow-forward-outline" style="transform: scale(150%);"></ion-icon></button>
-                 </div> 
-             </div>
-            <div class="pop" id="status" >
+                </div>
+                <div class="button">
+                    <button class="msg" id="click" style="display: block; width: 100%; height: 100%; padding: 0;">
+                        <ion-icon name="arrow-forward-outline" style="transform: scale(200%);"></ion-icon>
+                    </button>
+                </div>
+            </div>
+            <div class="pop" id="status">
                 <div class="container_box" style="overflow: hidden;" id="contain-pop">
-                    <ion-icon id="close" name="close-circle" class="ion" style=" position: relative ;  left: 95%; cursor: pointer; color: rgb(218, 83, 83, 0.8); transform: scale(110%);"></ion-icon>
+                    <ion-icon id="close" name="close-circle" class="ion"
+                        style=" position: relative ;  left: 95%; cursor: pointer; color: rgb(218, 83, 83, 0.8); transform: scale(110%);">
+                    </ion-icon>
                     <div class="box">
                         <div class="popProfilText">
                             <img src="src/hmz.jpg" alt="" class="pic">
                             <div class="title">
-                                <span class="alias" style=" cursor:default;" >Hamza SALAH </br></span>
-                                <span class="job"   style="font-size: 14px; cursor:default ;">Web Developper</span>
-                             </div>
+                                <span class="alias" style=" cursor:default;">Hamza SALAH </br></span>
+                                <span class="job" style="font-size: 14px; cursor:default ;">Web Developper</span>
+                            </div>
                         </div>
-                        <form action="https://formsubmit.co/contact.halaspec@gmail.com" method="POST" style="width: 100%; display: flex; justify-content: flex-end; flex-wrap: wrap;"> 
-                             <input type="email" id="mail" name="mail" required style="resize: none;width: 200%;background-color: f3f3f3;border-radius: 6px;border: 1px solid #ddd;outline: none; font-size: 14px; margin-bottom:20px; padding-left:40px; height:20px" placeholder="Salah@exemple.com" >
-                             <input type="text" placeholder="Entrez votre message" name="msg" id="msg" class="textarea" required>
-                             <input type="submit" class="btn" value="Envoyer" id="envoie"></button>
-                             <input  type="hidden" name="_next" value="https://halaspec.github.io/Web/">
-                             <input type="hidden" name="_captcha" value="false" >
+                        <form action="https://formsubmit.co/contact.halaspec@gmail.com" method="POST"
+                            style="width: 100%; display: flex; justify-content: flex-end; flex-wrap: wrap;">
+                            <input type="email" id="mail" name="mail" required
+                                style="resize: none;width: 200%;background-color: f3f3f3;border-radius: 6px;border: 1px solid #ddd;outline: none; font-size: 14px; margin-bottom:20px; padding-left:40px; height:20px"
+                                placeholder="Salah@exemple.com">
+                            <input type="text" placeholder="Entrez votre message" name="msg" id="msg" class="textarea"
+                                required>
+                            <input type="submit" class="btn" value="Envoyer" id="envoie"></button>
+                            <input type="hidden" name="_next" value="https://halaspec.github.io/Web/">
+                            <input type="hidden" name="_captcha" value="false">
                         </form>
                     </div>
-                </div> 
-              </div>
-              <div class="footer" style="bottom:10px; color: aliceblue; position: absolute;  display: flex; justify-items: center; align-items: center; ">
-                  <a  href="https://www.linkedin.com/in/salah-h/" style="margin-right: 5px; margin-left: 5px;"> <ion-icon name="logo-linkedin" style="transform: scale(200%); margin: 10px;"></ion-icon></a> 
-                  <a  href="https://github.com/Halaspec" style="margin-right: 5px;"> <ion-icon name="logo-github"   style="transform: scale(200%); margin: 10px;"></ion-icon></a> 
-                  <a  href="src/CV_Hamza-SALAH.pdf" style="margin-right: 5px;"> <ion-icon name="receipt-outline" style="transform: scale(200%); margin: 10px;"></ion-icon></a> 
-              </div>
-            </section>
-            
-          </div>
+                </div>
+            </div>
+            <div class="footer"
+                style="bottom:10px; color: aliceblue; position: absolute;  display: flex; justify-items: center; align-items: center; ">
+                <a href="https://www.linkedin.com/in/salah-h/" style="margin-right: 5px; margin-left: 5px;"
+                    class="linkdin">
+                    <ion-icon name="logo-linkedin" style="transform: scale(200%); margin: 10px;"></ion-icon>
+                </a>
+                <a href="https://github.com/Halaspec" style="margin-right: 5px;" class="github">
+                    <ion-icon name="logo-github" style="transform: scale(200%); margin: 10px;"></ion-icon>
+                </a>
+                <a href="src/CV_Hamza-SALAH.pdf" class="cv">
+                    <ion-icon name="document-attach-outline" style="transform: scale(200%); margin: 10px;"></ion-icon>
+                </a>
+            </div>
+</section>
 
-        <script src="script.js"></script>
-    </body>
+</div>
+
+<script src="script.js"></script>
+</body>
+
 </html>

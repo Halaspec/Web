@@ -5,7 +5,7 @@
 
 body{
     background-color: rgb(98, 156, 206);
-    animation: start 4s forwards;
+    animation: start 3s forwards;
     opacity: 0;
 }
 
@@ -75,6 +75,7 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    position: relative;
 }
 
 .profile_img img{
@@ -95,6 +96,27 @@ img:hover{
 @keyframes smooth {
     to{background-color: white;}
     
+}
+
+.profile .pancarte {
+    order: 2;
+    animation: translate_pancarte 5s ease-in-out;
+    transform: scale(90%);
+    opacity: 0;
+}
+
+@keyframes translate_pancarte {
+    0%{    
+
+
+    }
+    50%, 80%{
+        transform: translateY(-75%) translateX(50%) scale(100%);
+        opacity: 1;
+    }
+    100%{
+        
+    }
 }
 
 .profile .title{
@@ -313,4 +335,8 @@ section.red .Page_1{
 
     }
     
+}
+
+.Page_1 .footer .cv {
+    margin-right: 5px;
 }
