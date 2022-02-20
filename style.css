@@ -111,7 +111,7 @@ img:hover{
 
     }
     50%, 80%{
-        transform: translateY(-75%) translateX(50%) scale(100%);
+        transform: translateY(-50%) translateX(40%) scale(100%);
         opacity: 1;
     }
     100%{
@@ -183,6 +183,15 @@ section .pop  {
     opacity: 0;
     pointer-events:none; 
 }
+
+section.show .containeravis{
+    opacity: 0;
+}
+
+section.show .footer{
+    opacity: 0;
+}
+
 
 .pop img {
     width: 60px;
@@ -340,4 +349,9 @@ section.red .Page_1{
 
 .Page_1 .footer .cv {
     margin-right: 5px;
+}
+
+.Page_1 .containeravis  {
+    cursor: default;
+    color: rgb(169, 165, 165);
 }

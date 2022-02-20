@@ -1,3 +1,6 @@
+let nombrePouceHaut = 0; 
+let nombrePouceBas = 0;
+
 const section = document.querySelector("section"),
   hireBtn = section.querySelector("#click"),
   closeBtn = section.querySelector("#close"),
@@ -7,7 +10,9 @@ const section = document.querySelector("section"),
   blackBtn = section.querySelector("#noir"),
   blueBtn = section.querySelector("#bleu"),
   pop = section.querySelector("#status"),
-  containpop = section.querySelector("#contain-pop");
+  containpop = section.querySelector("#contain-pop"),
+  nbbas= section.querySelector("#nbrbas"),
+  nbhaut= section.querySelector("#nbrhaut");
 
 hireBtn.addEventListener("click", () => {
   section.classList.add("show");
@@ -68,5 +73,21 @@ redBtn.addEventListener("click", () => {
   section.classList.remove("black")
   section.classList.remove("blue")
   section.classList.remove("vert")
+}
+)
+
+nbhaut.addEventListener("click", () => {
+  nombrePouceHaut++;
+  nbhaut.innerHTML= nombrePouceHaut;
+  nbhaut = section.querySelector("#");
+  nbbas = section.querySelector("#");
+}
+)
+
+nbbas.addEventListener("click", () => {
+  nombrePouceBas++;
+  nbbas.innerHTML= nombrePouceBas;
+  nbhaut = section.querySelector("#");
+  nbbas = section.querySelector("#");
 }
 )
