@@ -79,15 +79,15 @@ redBtn.addEventListener("click", () => {
 nbhaut.addEventListener("click", () => {
   nombrePouceHaut++;
   nbhaut.innerHTML= nombrePouceHaut;
-  nbhaut = section.querySelector("#");
-  nbbas = section.querySelector("#");
+  nbbas.innerHTML= nombrePouceBas;
+  section.classList.add("pouce")
 }
 )
 
 nbbas.addEventListener("click", () => {
   nombrePouceBas++;
   nbbas.innerHTML= nombrePouceBas;
-  nbhaut = section.querySelector("#");
-  nbbas = section.querySelector("#");
+  nbhaut.innerHTML= nombrePouceHaut;
+  section.classList.add("pouce")
 }
 )

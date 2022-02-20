@@ -281,8 +281,12 @@ section.show .pop{
 }
 
 section.show .profile{
-    display: none;
+    opacity: 0;
 }
+section.show .containeravis{
+    pointer-events: none;
+}
+
 
 a { text-decoration: none; color: white;}
 
@@ -355,3 +359,32 @@ section.red .Page_1{
     cursor: default;
     color: rgb(169, 165, 165);
 }
+
+.Page_1 .containeravis div:hover {
+       transform: scale(110%);
+       border: white 1px solid;
+}
+
+.Page_1 .device::after {
+    content: "";
+}
+section.pouce .Page_1 .containeravis{
+    pointer-events: none;
+}
+
+@media screen and (max-width: 480px) {
+    @keyframes translate_pancarte {
+        0%{    
+        }
+        50%, 80%{
+            transform: translateY(-35%) translateX(40%) scale(100%);
+            opacity: 1;
+        }
+        100%{
+        }
+    }
+
+    .Page_1 .device::after {
+        content: "";
+    }
+  }
