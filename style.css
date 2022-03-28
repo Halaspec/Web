@@ -117,23 +117,19 @@ img:hover{
 
 .profile .pancarte {
     order: 2;
-    animation: translate_pancarte 5s ease-in-out;
+    animation: translate_pancarte 0s ease-in;
     transform: scale(90%);
     opacity: 0;
 }
 
 @keyframes translate_pancarte {
-    0%{    
-
-
+    0% ,94%{       
     }
-    50%, 80%{
+    98%,99%{
         transform: translateY(-50%) translateX(40%) scale(100%);
         opacity: 1;
     }
-    100%{
-        
-    }
+    100%{}
 }
 
 .profile .title{
@@ -389,7 +385,7 @@ section.pouce .Page_1 .containeravis{
     pointer-events: none;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 400px) {
     @keyframes translate_pancarte {
         0%{    
         }
@@ -404,6 +400,33 @@ section.pouce .Page_1 .containeravis{
     .Page_1 .device::after {
         content: "";
     }
+
+    .loadingConatainer div{
+        animation: turn 4.5s infinite ;
+        border: white 4px solid; 
+        height: 45%;  
+        border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
+        width: 30%;  
+        position: absolute; top:25%; left: 35%; ;
+    }
+    .loadingConatainer .bar2{
+      animation: turn 4s infinite ;
+      border: white 4px solid; 
+      height: 45%;  
+      border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
+      width: 30%;  
+      position: absolute; top:25%; left: 35%; ;
+    }
+    .loadingConatainer .bar3{
+      animation: turns 5s infinite ;
+      border: white 4px solid; 
+      height: 45%;  
+      border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
+      width: 30%;  
+      position: absolute; top:25%; left: 35%; ;
+    }
+
+
   }
 
   .loadingConatainer .bar1{
