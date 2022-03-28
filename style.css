@@ -386,7 +386,7 @@ section.pouce .Page_1 .containeravis{
     pointer-events: none;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     @keyframes translate_pancarte {
         0%{    
         }
@@ -405,29 +405,27 @@ section.pouce .Page_1 .containeravis{
     .loadingConatainer .bar1{
         animation: turn 4.5s infinite ;
         border: white 4px solid; 
-        height: 45%;  
+        height: 40%;  
         border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
-        width: 45%;  
+        width: 50%; 
         position: absolute; top:25%; left: 35%; ;
     }
     .loadingConatainer .bar2{
       animation: turn 4s infinite ;
       border: white 4px solid; 
-      height: 45%;
+      height: 40%;
       border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
-      width: 45%;  
+      width: 50%; 
       position: absolute; top:25%; left: 35%; ;
     }
     .loadingConatainer .bar3{
-      animation: turns 5s infinite ;
+      animation: turn 5s infinite ;
       border: white 4px solid; 
       height: 35%;  
       border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
-      width: 45%; 
-      position: absolute; top:25%; left: 35%; ;
+      width: 50%; 
+      position: absolute; top:25%; left: 35%;
     }
-
-
   }
 
   .loadingConatainer .bar1{
@@ -437,7 +435,7 @@ section.pouce .Page_1 .containeravis{
     animation: turn 4s infinite ;
   }
   .loadingConatainer .bar3{
-    animation: turns 5s infinite ;
+    animation: turn 5s infinite ;
   }
 
   @keyframes turn {
