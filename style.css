@@ -9,6 +9,23 @@ body{
     opacity: 0;
 }
 
+section {
+    opacity: 1;
+    pointer-events: none;
+    animation: turnon 5.5s forwards;
+}
+
+@keyframes turnon {
+    0%,95%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        pointer-events:all;
+    }
+
+ }
+
 .Page_1 .pageColor {
     position: absolute;
     right: 0px;
@@ -388,3 +405,61 @@ section.pouce .Page_1 .containeravis{
         content: "";
     }
   }
+
+  .loadingConatainer .bar1{
+      animation: turn 4.5s infinite ;
+  }
+  .loadingConatainer .bar2{
+    animation: turn 4s infinite ;
+  }
+  .loadingConatainer .bar3{
+    animation: turns 5s infinite ;
+  }
+
+  @keyframes turn {
+      0%{}
+      100%{
+        transform: rotate(360deg) ;
+      }
+  }
+
+
+  .loadingConatainer span:nth-child(1){
+      animation: hide 1s infinite;
+}
+
+  .loadingConatainer span:nth-child(2){
+    animation: hide 2s infinite;
+}
+
+  .loadingConatainer span:nth-child(3){
+    animation: hide 2.5s infinite;
+}
+
+.containerload {
+    animation: turnoff 2s forwards;
+}
+
+ @keyframes hide {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+
+ }
+
+ @keyframes turnoff {
+    0%,99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        width: 0px;
+        height: 0px;
+        overflow: hidden; 
+         
+    }
+
+ }

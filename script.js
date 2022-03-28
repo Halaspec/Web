@@ -1,18 +1,19 @@
-let nombrePouceHaut = 0; 
+let nombrePouceHaut = 0;
 let nombrePouceBas = 0;
+
 
 const section = document.querySelector("section"),
   hireBtn = section.querySelector("#click"),
   closeBtn = section.querySelector("#close"),
-  sendBtn = section.querySelector("#envoie"),
+  sendBtn = section.querySelector("#envoie"), msgPut = section.querySelector("#msg"), mailPut = section.querySelector("#mail"),
   redBtn = section.querySelector("#red"),
   greenBtn = section.querySelector("#vert"),
   blackBtn = section.querySelector("#noir"),
   blueBtn = section.querySelector("#bleu"),
   pop = section.querySelector("#status"),
   containpop = section.querySelector("#contain-pop"),
-  nbbas= section.querySelector("#nbrbas"),
-  nbhaut= section.querySelector("#nbrhaut");
+  nbbas = section.querySelector("#nbrbas"),
+  nbhaut = section.querySelector("#nbrhaut");
 
 hireBtn.addEventListener("click", () => {
   section.classList.add("show");
@@ -39,8 +40,18 @@ pop.addEventListener("click", () => {
 )
 
 
+mailPut.addEventListener("input", () => {
+  if (msgPut.value != null && mailPut.value != null){ sendBtn.disabled = false; } else {sendBtn.disabled = true; }
+
+})
+
+
+msgPut.addEventListener("input", () => {
+  if (msgPut.value != null && mailPut.value != null) { sendBtn.disabled = false; } else {sendBtn.disabled = true; }
+})
+
+sendBtn.disabled = true;
 sendBtn.addEventListener("click", () => {
-  section.classList.add("succes")
 }
 )
 
@@ -78,16 +89,16 @@ redBtn.addEventListener("click", () => {
 
 nbhaut.addEventListener("click", () => {
   nombrePouceHaut++;
-  nbhaut.innerHTML= nombrePouceHaut;
-  nbbas.innerHTML= nombrePouceBas;
+  nbhaut.innerHTML = nombrePouceHaut;
+  nbbas.innerHTML = nombrePouceBas;
   section.classList.add("pouce")
 }
 )
 
 nbbas.addEventListener("click", () => {
   nombrePouceBas++;
-  nbbas.innerHTML= nombrePouceBas;
-  nbhaut.innerHTML= nombrePouceHaut;
+  nbbas.innerHTML = nombrePouceBas;
+  nbhaut.innerHTML = nombrePouceHaut;
   section.classList.add("pouce")
 }
 )

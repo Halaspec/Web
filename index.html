@@ -17,11 +17,21 @@
     <meta name="theme-color" content="#ffffff">
     <!-- for Favicon -->
 </header>
+
+<div class="loadingConatainer" style="display: flex; text-align: center; justify-content: center; width: 100%; height: 100vh; animation: turnoff 2s forwards;"> 
+    <div class="containerload">
+      <div class="bar1" style="border: white 2px solid; height: 45%;  border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; width: 30%;   position: absolute; top:25%; left: 35%; "></div>
+      <div class="bar2" style="border: white 2px solid; height: 45%;  border-radius:51% 49% 66% 34% / 55% 29% 71% 45% ;width: 30%;  position: absolute;top:25%; left: 35%;  "></div>
+      <div class="bar3" style="border: white 2px solid; height: 45%;  border-radius: 22% 78% 46% 54% / 55% 48% 52% 45% ; width: 30%;  position: absolute; top:25%; left: 35%; "></div>
+      <nav class="load" style="color:white; position: absolute; top:50%; left: 45%;"><strong>Chargement<span>.</span><span>.</span><span>.</span></strong></nav>
+    </div>
+</div>
+
 <section>
 
     <body style="overflow: hidden;">
         <div class="Page_1" style="overflow: hidden;">
-            <p class="device" style="position: absolute; top: 0; left: 0;color:rgb(94, 204, 94);" >  </p>
+            <p class="device" style="position: absolute; top: 0; left: 0;color:rgb(94, 204, 94);"> </p>
             <nav class="pageColor" id="showNavColor">
                 <ion-icon id="tools" name="menu-outline"
                     style="color: white; transform: scale(200%); margin-bottom: 10px; cursor: pointer;"></ion-icon>
@@ -97,16 +107,22 @@
                     <ion-icon name="document-attach-outline" style="transform: scale(200%); margin: 10px;"></ion-icon>
                 </a>
             </div>
-            <div class="containeravis" style=" display: flex;  position: absolute; bottom : 100px; width: 70px;height: 50px; align-items: center; justify-content: space-between;">
-                <div class="pouceHaut" style="background-color: greenyellow;width: 30px;height: 30px; border-radius: 6px;display: flex; align-items: center; justify-content: center; cursor: pointer;" id="nbrhaut">     <img src="src/pouceHaut.png" alt="" class="pouceHaut"  style="object-fit: cover; width: 100%; height: 100%;" id="pouceHaut"></div>
-                <div class="pouceBas"  style="background-color: rgb(255, 95, 47);width: 30px;height: 30px;border-radius: 6px; display: flex; align-items: center; justify-content: center; cursor: pointer;" id="nbrbas"> <img src="src/pouceBas.png"  alt="" class="pouceBas"   style="object-fit: cover; width: 100%; height: 100%;" id="pouceBas"></div>
+            <div class="containeravis"
+                style=" display: flex;  position: absolute; bottom : 100px; width: 70px;height: 50px; align-items: center; justify-content: space-between;">
+                <div class="pouceHaut"
+                    style="background-color: greenyellow;width: 30px;height: 30px; border-radius: 6px;display: flex; align-items: center; justify-content: center; cursor: pointer;"
+                    id="nbrhaut"> <img src="src/pouceHaut.png" alt="" class="pouceHaut"
+                        style="object-fit: cover; width: 100%; height: 100%;" id="pouceHaut"></div>
+                <div class="pouceBas"
+                    style="background-color: rgb(255, 95, 47);width: 30px;height: 30px;border-radius: 6px; display: flex; align-items: center; justify-content: center; cursor: pointer;"
+                    id="nbrbas"> <img src="src/pouceBas.png" alt="" class="pouceBas"
+                        style="object-fit: cover; width: 100%; height: 100%;" id="pouceBas"></div>
             </div>
+            <script src="script.js"></script>
+    </body>
+
+
+
 </section>
-
-
-</div>
-
-<script src="script.js"></script>
-</body>
 
 </html>
