@@ -404,7 +404,7 @@ section.pouce .Page_1 .containeravis{
     .loadingConatainer div{
         animation: turn 4.5s infinite ;
         border: white 4px solid; 
-        height: 45%;  
+        height: 30%;  
         border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
         width: 30%;  
         position: absolute; top:25%; left: 35%; ;
@@ -412,7 +412,7 @@ section.pouce .Page_1 .containeravis{
     .loadingConatainer .bar2{
       animation: turn 4s infinite ;
       border: white 4px solid; 
-      height: 45%;  
+      height: 32%;  
       border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
       width: 30%;  
       position: absolute; top:25%; left: 35%; ;
@@ -420,7 +420,7 @@ section.pouce .Page_1 .containeravis{
     .loadingConatainer .bar3{
       animation: turns 5s infinite ;
       border: white 4px solid; 
-      height: 45%;  
+      height: 35%;  
       border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
       width: 30%;  
       position: absolute; top:25%; left: 35%; ;
