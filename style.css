@@ -202,6 +202,7 @@ section.show .containeravis{
 }
 
 section.show .footer{
+    pointer-events: none;
     opacity: 0;
 }
 
@@ -404,17 +405,17 @@ section.pouce .Page_1 .containeravis{
     .loadingConatainer .bar1{
         animation: turn 4.5s infinite ;
         border: white 4px solid; 
-        height: 30%;  
+        height: 45%;  
         border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
-        width: 30%;  
+        width: 45%;  
         position: absolute; top:25%; left: 35%; ;
     }
     .loadingConatainer .bar2{
       animation: turn 4s infinite ;
       border: white 4px solid; 
-      height: 32%;  
+      height: 45%;
       border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
-      width: 30%;  
+      width: 45%;  
       position: absolute; top:25%; left: 35%; ;
     }
     .loadingConatainer .bar3{
@@ -422,7 +423,7 @@ section.pouce .Page_1 .containeravis{
       border: white 4px solid; 
       height: 35%;  
       border-radius:62% 48% 22% 88% / 84% 87% 13% 16% ; 
-      width: 30%;  
+      width: 45%; 
       position: absolute; top:25%; left: 35%; ;
     }
 
