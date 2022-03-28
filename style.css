@@ -401,7 +401,7 @@ section.pouce .Page_1 .containeravis{
         content: "";
     }
 
-    .loadingConatainer div{
+    .loadingConatainer .bar1{
         animation: turn 4.5s infinite ;
         border: white 4px solid; 
         height: 30%;  
